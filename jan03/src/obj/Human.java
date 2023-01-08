@@ -12,15 +12,15 @@ public class Human {
 		
 		public void show() {
 			ani = new Animal();
-			//ani.setName("홍길동");
-			//System.out.println(ani.getName());
+			ani.setName("홍길동");
+			System.out.println(ani.getName());
 		}
 		
 }
 
 // DTO에서 많이 사용
 // private 의 값을 저장, 호출할때 필요한 메소드 getter, setter (값을 수정, 값을 가져옴)	 (우회접속)
-//퍼블릭 안붙은 경우 = default : 같은 패키지 안에서 볼 수 있음
+// 퍼블릭 안붙은 경우 = default : 같은 패키지 안에서 볼 수 있음
 class Animal {
 	//private : Animal class안에서만 사용 가능 , 패키지 단위보다 훨씬 작음 , 값변경을 못하게 할때(잠궈버릴때) 사용
 	private String name;
